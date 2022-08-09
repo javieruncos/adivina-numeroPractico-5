@@ -6,15 +6,19 @@ img{
     height: 500px;
 }
 
+.transparente{
+    background-color:black;
+}
+
 .parpadear{
      /* display:inline-block;  */
-     position: relative;
-    font-size: 30px;
-    box-shadow: 0px 0px 100px aqua;
+     /* position: relative; */
+    font-size: 40px;
+    box-shadow: 0px 0px 26px greenyellow;
     top: 100px;
     /* left: 100px; */
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 100%; 
     animation: animacion 2s infinite linear;
 }
@@ -23,45 +27,21 @@ img{
 
  @media all and (max-width:540px){
    
-   .numbers{
-     margin-left: 12px;
-     height: 150px;
+    .numeros1{
+        height: 300px;
     }
-  
-   .parpadear{
-    display:block; 
-    position: relative;
-    font-size: 30px;
-   box-shadow: 0px 0px 100px aqua; 
-   top: 0px;
-   left: 10px;
-    height: 100px;
-    width: 100px;
-    margin-top: 0;
-     border-radius: 100%;  
-    animation: animacion 2s infinite linear; 
-    
+   .numeros2{
+    height: 300px;
+    width: 300px;
+   }
   }
 
 
-} 
+
 
 
 @media all and (max-width:991px){
-    .parpadear{
-        display:block; 
-        position: relative;
-        font-size: 30px;
-       box-shadow: 0px 0px 100px aqua; 
-       top: 0px;
-       left: 10px;
-        height: 150px;
-        width: 150px;
-        margin-top: 0;
-         border-radius: 100%;  
-        animation: animacion 2s infinite linear; 
-        
-      }
+    
 }
 
 
