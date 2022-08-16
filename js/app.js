@@ -1,19 +1,27 @@
 
+let random;
 
-
-
-
-let random = document.getElementsByClassName("parpadear");
-// random = addEventListener("click",generarNumero);
-let numero = Math.floor(Math.random()*10)+1;
-function generarNumero(){
-    console.log(document.getElementById("adivinar").value)
-    return console.log(numero) 
+function  Random(){
+    random = Math.floor( Math.random() * (10 - 1) + 1);
+    console.log(random)
 }
 
-function valor(){
-    
+
+function Adivinar(){
+    let adivinar = document.getElementById("numeroMagico").value;
+
+    if(adivinar== random){
+        alert("felicitaciones adivinaste el numero magico")
+    }else{
+        if(adivinar < random){
+            alert("tu numero es menor que el numero magico")
+        }else{
+            alert("tu numero es mayor que el numero el magico")
+        }
+    }
+
 }
+
 
 
 
